@@ -6,7 +6,7 @@ main(void)
 {
     int x, a, b;
     if (scanf("%d%d%d", &x, &a, &b) != 3) {
-        abort();
+        return 1;
     }
     if (a <= x && x <= b) {
         printf("Hello world!\n"); // If x is in [a, b] then prints "Hello world!"
