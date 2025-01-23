@@ -1,4 +1,4 @@
-CC = /usr/local/bin/afl-gcc
+CC = afl-cc
 all: hello.exe
 hello.exe: hello.c
 	$(CC) $(CFLAGS) -o $@ $^
