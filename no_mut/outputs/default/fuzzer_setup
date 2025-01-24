@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=/home/maestro/source/fuzz_task/agrep/agrep
+AFL_CUSTOM_INFO_PROGRAM_ARGV=-f @@
+AFL_CUSTOM_INFO_OUT=outputs/default
+# command line:
+'afl-fuzz' '-i' 'inputs' '-o' 'outputs' '/home/maestro/source/fuzz_task/agrep/agrep' '-f' '@@'
