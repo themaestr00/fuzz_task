@@ -1,3 +1,4 @@
-/home/maestro/source/fuzz_task/agrep/agrep
+/home/maestro/source/fuzz_task/bin/agrep
 -f
 @@
+/home/maestro/source/fuzz_task/text/book.txt
