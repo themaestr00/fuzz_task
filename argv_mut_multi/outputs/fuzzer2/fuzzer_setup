@@ -1,0 +1,8 @@
+# environment variables:
+AFL_CUSTOM_MUTATOR_ONLY=1
+AFL_CUSTOM_INFO_PROGRAM=bin/agrep-argv
+AFL_CUSTOM_INFO_PROGRAM_ARGV=
+AFL_CUSTOM_INFO_OUT=argv_mut_multi/outputs/fuzzer2
+AFL_PYTHON_MODULE=my_mutator
+# command line:
+'afl-fuzz' '-i' 'argv_mut_multi/inputs' '-o' 'argv_mut_multi/outputs' '-S' 'fuzzer2' '--' 'bin/agrep-argv'

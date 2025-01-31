@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=bin/agrep-argv
+AFL_CUSTOM_INFO_PROGRAM_ARGV=
+AFL_CUSTOM_INFO_OUT=no_mut/outputs/fuzzer1
+# command line:
+'afl-fuzz' '-i' 'no_mut/inputs' '-o' 'no_mut/outputs' '-M' 'fuzzer1' '--' 'bin/agrep-argv'
