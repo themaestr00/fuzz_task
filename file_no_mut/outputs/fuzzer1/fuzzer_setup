@@ -1,0 +1,6 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=bin/agrep
+AFL_CUSTOM_INFO_PROGRAM_ARGV=-f @@ text/book.txt
+AFL_CUSTOM_INFO_OUT=temp1/outputs/fuzzer1
+# command line:
+'afl-fuzz' '-i' 'temp1/inputs' '-o' 'temp1/outputs' '-M' 'fuzzer1' '--' 'bin/agrep' '-f' '@@' 'text/book.txt'

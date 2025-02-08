@@ -1,7 +1,0 @@
-# environment variables:
-AFL_CUSTOM_INFO_PROGRAM=bin/agrep
-AFL_CUSTOM_INFO_PROGRAM_ARGV=-0 -b -d -h -i -l -n -p -r -v -w -u -B -D1 -I1 -G -S1 -ia -i0 -s -f @@ text/book.txt
-AFL_CUSTOM_INFO_OUT=single/outputs/default
-AFL_PYTHON_MODULE=my_mutator
-# command line:
-'afl-fuzz' '-i' 'single/inputs' '-o' 'single/outputs' '--' 'bin/agrep' '-0' '-b' '-d' '-h' '-i' '-l' '-n' '-p' '-r' '-v' '-w' '-u' '-B' '-D1' '-I1' '-G' '-S1' '-ia' '-i0' '-s' '-f' '@@' 'text/book.txt'

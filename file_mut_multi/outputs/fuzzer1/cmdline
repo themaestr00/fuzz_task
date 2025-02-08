@@ -1,0 +1,4 @@
+bin/agrep
+-f
+@@
+text/book.txt

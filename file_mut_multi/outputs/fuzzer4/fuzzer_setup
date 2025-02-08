@@ -1,0 +1,7 @@
+# environment variables:
+AFL_CUSTOM_INFO_PROGRAM=bin/agrep
+AFL_CUSTOM_INFO_PROGRAM_ARGV=-f @@ text/book.txt
+AFL_CUSTOM_INFO_OUT=file_mut_multi/outputs/fuzzer4
+AFL_PYTHON_MODULE=my_mutator_file
+# command line:
+'afl-fuzz' '-i' 'file_mut_multi/inputs' '-o' 'file_mut_multi/outputs' '-S' 'fuzzer4' '--' 'bin/agrep' '-f' '@@' 'text/book.txt'

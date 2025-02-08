@@ -1,6 +1,0 @@
-# environment variables:
-AFL_CUSTOM_INFO_PROGRAM=/home/maestro/source/fuzz_task/bin/agrep
-AFL_CUSTOM_INFO_PROGRAM_ARGV=-f @@ /home/maestro/source/fuzz_task/text/book.txt
-AFL_CUSTOM_INFO_OUT=no_mut/outputs/default
-# command line:
-'afl-fuzz' '-i' 'no_mut/inputs' '-o' 'no_mut/outputs' '/home/maestro/source/fuzz_task/bin/agrep' '-f' '@@' '/home/maestro/source/fuzz_task/text/book.txt'
